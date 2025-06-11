@@ -18,7 +18,6 @@ COPY . .
 # RUN echo "VUE_APP_WEBSITE_URL=https://superadmin.development.agentcis.com" >> .env.production
 # RUN echo "VUE_APP_AGENTCISAPP_URL=staging.agentcis.com" >> .env.production
 
-# RUN cp .env.staging .env
 
 RUN npm run build
 
