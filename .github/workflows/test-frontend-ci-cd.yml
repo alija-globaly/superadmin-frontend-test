@@ -31,7 +31,7 @@ jobs:
           working-directory: ./client
           env:
             ECR_REGISTRY: ${{ steps.login-pf-aws-ecr.outputs.registry }}
-            ECR_REPOSITORY: alija-frontend-k8s
+            ECR_REPOSITORY: alija-frontend-test
             IMAGE_TAG: v1
           run: |
             docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
